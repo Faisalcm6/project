@@ -1,0 +1,104 @@
+/* Portfolio */
+#portfolio {
+    background: rgba(0, 0, 0, 0) url("../images/portfolio_bg.jpg") no-repeat scroll 0 0;
+    background-size:cover;
+    position:relative;
+    padding-bottom: 102px;
+    border-bottom:2px solid #ffcb0f;
+}
+#portfolio::before{
+    position:absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    background: rgba(255,203,15,0.85);
+    top:0;
+    left:0;
+}
+.portfolio_area{ position:relative;color:#fff;}
+.portfolio_area h2 {
+    color: #fff;
+    margin: 65px 0 34px;
+}
+/* Portfolio filters */
+#filters {
+    margin: 52px 0 38px;
+}
+#filters > button {
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    outline: 0 none;
+    padding: 6px 17px 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#filters > button:hover {
+    border: 1px solid #282828;
+    color: #282828;
+}
+#filters > button.is-checked {
+    background: #282828;
+}
+#filters > button.is-checked:hover {
+    color: #fff;
+}
+.grid{margin: 0 -6px;}
+.grid-item{border:6px solid transparent;}
+.grid-item, .grid-sizer {width: 25%;}
+.grid-item {
+    float: left;
+    height: 255px !important; 
+}
+.grid-item{
+    overflow: hidden;
+}
+.grid-item--width2 { width: 50%;}
+.grid-item--height2 { height: 510px !important;}
+.grid-item:hover img{
+    transform: scale(1.1);
+}
+.grid-item img{
+    height: 100%;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    transition: all 0.6s;
+}
+/* Portfolio Hover */
+.portfolio_hover_area {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    text-align: center;
+    opacity:0;
+}
+.grid-item:hover .portfolio_hover_area {opacity: 1;}
+.portfolio_hover_area .fa {
+    background: #ffcb0f none repeat scroll 0 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 215px;
+    padding: 15px;
+    border:1px solid transparent;
+}
+.grid-item .portfolio_hover_area .fa {
+    margin-top: 90px;
+}
+.grid-item--width2 .portfolio_hover_area .fa {
+    margin-top: 217px;
+}
+.portfolio_hover_area > a:first-child{  margin-right: 10px;}
+.portfolio_hover_area .fa:hover{
+    border:1px solid #ffcb0f;
+    background:transparent;
+    color:#ffcb0f;
+}
