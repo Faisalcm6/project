@@ -69,6 +69,7 @@ nav ul li a:hover{
     color: red;
     background-color: #fff;
     border-radius: 2px;
+    border: red;
 }
 .content{
     margin-top: 95px;
